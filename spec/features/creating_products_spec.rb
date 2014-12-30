@@ -8,7 +8,7 @@ require 'rails_helper'
 
     scenario "posso criar um produto" do
       fill_in 'Nome', with: 'Produto 1'
-      fill_in 'Descrição', with: 'Produto 1 (um)'
+      fill_in 'Descrição', with: 'Descrição do produto 1 (um)'
       click_button 'Criar produto'
 
       expect(page).to have_content('Produto foi criado.')
