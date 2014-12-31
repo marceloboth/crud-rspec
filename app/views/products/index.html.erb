@@ -1,0 +1,26 @@
+<h2>Cadastro de produtos</h2>
+
+<div class="row">
+  <% if !@products.blank? %>
+  <table class="table table-hover">
+    <thead>
+      <td>Nome</td>
+      <td>Descricao</td>
+    </thead>
+    <tbody>
+        <% @products.each do |product| %>
+          <tr>
+            <td><%= product.name %></td>
+            <td><%= product.description %></td>
+          </tr>
+        <% end %>
+    </tbody>
+  </table>
+  <% else %>
+    Nenhum registro encontrado!
+  <% end %>
+</div>
+
+<div class="row">
+  <%= link_to "Novo Produto", new_product_path, class: "btn btn-primary" %>
+</div>

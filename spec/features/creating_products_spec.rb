@@ -2,7 +2,8 @@ require 'rails_helper'
 
   feature 'Criando Produtos' do
     before do
-      visit '/'
+      visit root_path
+      click_link 'Produtos'
       click_link 'Novo Produto'
     end
 
