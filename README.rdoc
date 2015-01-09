@@ -6,9 +6,9 @@ Cadastro: https://marceloboth.github.io/2014/09/crud-com-rails-criando-um-cadast
 
 Listagem: https://marceloboth.github.io/2014/12/crud-com-rails-listando-cadastros/
 
-Editando:
+Editando: https://marceloboth.github.io/2015/01/crud-com-rails-editando-um-cadastro/
 
-Excluindo:
+Excluindo: https://marceloboth.github.io/2015/01/crud-com-rails-removendo-um-cadastro/
 
 Upload de imagem:
 
