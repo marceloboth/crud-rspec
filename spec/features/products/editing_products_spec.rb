@@ -1,11 +1,10 @@
 require 'rails_helper'
 
 feature 'Editando Produtos' do
-  let(:product) do
-    FactoryGirl.create(:product)
-  end
 
   before do
+    product = FactoryGirl.create(:product)
+
     visit root_path
     click_link 'Produtos'
   end
