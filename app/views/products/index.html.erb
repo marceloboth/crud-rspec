@@ -12,6 +12,7 @@
           <tr>
             <td><%= product.name %></td>
             <td><%= product.description %></td>
+            <td><%= link_to "Editar", edit_product_path(product), class: "btn btn-default" %></td>
           </tr>
         <% end %>
     </tbody>
