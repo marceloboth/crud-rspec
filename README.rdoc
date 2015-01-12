@@ -1,28 +1,22 @@
-== README
+README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Iniciando com rails: https://marceloboth.github.io/2014/08/iniciando-em-ruby-on-rails-com-testes/
 
-Things you may want to cover:
+Cadastro: https://marceloboth.github.io/2014/09/crud-com-rails-criando-um-cadastro-usando-rspec/
 
-* Ruby version
+Listagem: https://marceloboth.github.io/2014/12/crud-com-rails-listando-cadastros/
 
-* System dependencies
+Editando: https://marceloboth.github.io/2015/01/crud-com-rails-editando-um-cadastro/
 
-* Configuration
+Excluindo: https://marceloboth.github.io/2015/01/crud-com-rails-removendo-um-cadastro/
 
-* Database creation
+Upload de imagem:
 
-* Database initialization
+Paginação
 
-* How to run the test suite
+Deploy:
 
-* Services (job queues, cache servers, search engines, etc.)
+Autenticação:
 
-* Deployment instructions
+Autorização:
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
