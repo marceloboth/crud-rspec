@@ -1,0 +1,14 @@
+<%= form_for(@product) do |f| %>
+  <%= render 'shared/errors', object: f.object %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+     <%= f.submit "Salvar" %>
+  </p>
+<% end %>

@@ -1,11 +1,10 @@
 require 'rails_helper'
 
 feature 'Editando Produtos' do
-  let(:product) do
-    FactoryGirl.create(:product)
-  end
 
   before do
+    product = FactoryGirl.create(:product)
+
     visit root_path
     click_link 'Produtos'
   end
@@ -13,18 +12,18 @@ feature 'Editando Produtos' do
 
   scenario "posso editar um produto" do
     click_link "Editar"
-  #   fill_in 'Nome', with: 'Produto 1'
-  #   fill_in 'Descrição', with: 'Descrição do produto 1 (um)'
-  #   click_button 'Criar produto'
+    fill_in 'Nome', with: 'Produto 1'
+    click_button 'Salvar'
 
-  #   expect(page).to have_content('Produto foi editado.')
+    expect(page).to have_content('Produto foi editado.')
   end
 
-  # scenario "com descrição inválida não posso editar um produto" do
-  #   fill_in 'Nome', with: 'Meu produto'
-  #   fill_in 'Descrição', with: ''
-  #   click_button 'Criar produto'
+  scenario "quando nome em branco não posso editar um produto" do
+    click_link "Editar"
+    fill_in 'Nome', with: ''
+    click_button 'Salvar'
 
-  #   expect(page).to have_content('Descrição é muito curto (mínimo: 15 caracteres)')
-  # end
+    expect(page).to have_content('Produto não foi alterado, verifique os erros.')
+    expect(page).to have_content('Nome é muito curto (mínimo: 5 caracteres)')
+  end
 end
