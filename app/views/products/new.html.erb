@@ -1,15 +1,3 @@
-<h2>New Product</h2>
-<%= form_for(@product) do |f| %>
-  <%= render 'shared/errors', object: f.object %>
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
-  </p>
-  <p>
-     <%= f.submit "Criar produto" %>
-  </p>
-<% end %>
+<h2>Criando</h2>
+
+<%= render 'form' %>

@@ -23,7 +23,17 @@ class ProductsController < ApplicationController
   end
 
   def edit
+    @product = Product.find(params[:id])
+  end
 
+  def update
+    @product = Product.find(params[:id])
+    if @product.update(product_params)
+      redirect_to @product, notice: 'Produto foi editado.'
+    else
+      flash[:alert] = 'Produto não foi alterado, verifique os erros.'
+      render :edit
+    end
   end
 
   private
