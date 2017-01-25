@@ -1,9 +1,7 @@
-README
+1. Iniciando com rails: https://marceloboth.github.io/2014/08/iniciando-em-ruby-on-rails-com-testes/
 
-Iniciando com rails: https://marceloboth.github.io/2014/08/iniciando-em-ruby-on-rails-com-testes/
+2. Cadastro: https://marceloboth.github.io/2014/09/crud-com-rails-criando-um-cadastro-usando-rspec/
 
-Cadastro: https://marceloboth.github.io/2014/09/crud-com-rails-criando-um-cadastro-usando-rspec/
+3. Listagem: https://marceloboth.github.io/2014/12/crud-com-rails-listando-cadastros/
 
-Listagem: https://marceloboth.github.io/2014/12/crud-com-rails-listando-cadastros/
-
-Editando: http://marceloboth.github.io/2015/01/crud-com-rails-editando-um-cadastro/
+4. Editando: http://marceloboth.github.io/2015/01/crud-com-rails-editando-um-cadastro/
